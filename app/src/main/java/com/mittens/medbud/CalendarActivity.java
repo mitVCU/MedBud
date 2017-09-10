@@ -24,6 +24,8 @@ public class CalendarActivity extends AppCompatActivity{
                 String date = i + "/" + i1 + "/" + i2;
                 Log.d(TAG, "onSelectedDayChange: date: " + date);
 
+//                Intent intent = new Intent(CalendarActivity.this, MainActivity.class );
+//                startActivity(intent);
             }
         });
     }
