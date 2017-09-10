@@ -39,7 +39,7 @@
         android:layout_weight="0.51"
         android:gravity="center"
         android:text="JOHN SMITH"
-        android:textColor="#eeff00"
+        android:textColor="#FFF19953"
         android:textSize="50sp" />
 
     <CalendarView
@@ -48,5 +48,10 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.01"
         android:paddingTop="20dp"
-        android:paddingBottom="10dp"/>
+        android:paddingBottom="10dp"
+        android:dateTextAppearance="@android:style/TextAppearance.Large"
+        android:weekDayTextAppearance="@android:style/TextAppearance.Large"
+        />
+
+
 </LinearLayout>
