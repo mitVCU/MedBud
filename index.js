@@ -253,7 +253,7 @@ const handlers = {
                     ReturnValues: "UPDATED_NEW"
                 };
                 update(params);
-                var speechOut = "Okay, you just took " + drugName;
+                var speechOut = "Okay, you just took " + drugName + ". ";
                 if(ttt >= data.Item.MedicationFrequency) {
                     speechOut += ("You are done with " + drugName + " for the day.");
                 }
