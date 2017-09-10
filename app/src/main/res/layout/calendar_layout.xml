@@ -11,12 +11,16 @@
         android:layout_weight="0.51"
         android:gravity="center"
         android:text="JOHN SMITH"
-        android:textSize="32sp"/>
+        android:textSize="32sp"
+        android:dateTextAppearance="@android:style/TextAppearance.Large"
+        />
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.01"
-        android:paddingTop="50dp"/>
+        android:paddingTop="50dp"
+        android:dateTextAppearance="@android:style/TextAppearance.Large"
+        />
 </LinearLayout>
