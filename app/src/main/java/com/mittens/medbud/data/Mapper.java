@@ -10,19 +10,14 @@ import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBTable;
 
 @DynamoDBTable(tableName = "MedicationInformation")
 public class Mapper {
+
     String MedicationName;
-    String MedicationQuantity;
+    Integer MedicationQuantity;
     String MedicationTime;
     String MedicationFrequency;
-
-    @DynamoDBAttribute(attributeName = "MedicationFrequency")
-    public String getMedicationFrequency() {
-        return MedicationFrequency;
-    }
-
-    public void setMedicationFrequency(String medicationFrequency) {
-        MedicationFrequency = medicationFrequency;
-    }
+    Boolean TakenToday;
+    Integer TimesTaken;
+    String lastTime;
 
     @DynamoDBHashKey(attributeName = "MedicationName")
     public String getMedicationName() {
@@ -34,11 +29,11 @@ public class Mapper {
     }
 
     @DynamoDBAttribute(attributeName = "MedicationQuantity")
-    public String getMedicationQuantity() {
+    public Integer getMedicationQuantity() {
         return MedicationQuantity;
     }
 
-    public void setMedicationQuantity(String medicationQuantity) {
+    public void setMedicationQuantity(Integer medicationQuantity) {
         MedicationQuantity = medicationQuantity;
     }
 
@@ -51,5 +46,39 @@ public class Mapper {
         MedicationTime = medicationTime;
     }
 
+    @DynamoDBAttribute(attributeName = "MedicationFrequency")
+    public String getMedicationFrequency() {
+        return MedicationFrequency;
+    }
 
+    public void setMedicationFrequency(String medicationFrequency) {
+        MedicationFrequency = medicationFrequency;
+    }
+
+    @DynamoDBAttribute(attributeName = "TakenToday")
+    public Boolean getTakenToday() {
+        return TakenToday;
+    }
+
+    public void setTakenToday(Boolean takenToday) {
+        TakenToday = takenToday;
+    }
+
+    @DynamoDBAttribute(attributeName = "TimesTaken")
+    public Integer getTimesTaken() {
+        return TimesTaken;
+    }
+
+    public void setTimesTaken(Integer timesTaken) {
+        TimesTaken = timesTaken;
+    }
+
+    @DynamoDBAttribute(attributeName = "lastTime")
+    public String getLastTime() {
+        return lastTime;
+    }
+
+    public void setLastTime(String lastTime) {
+        this.lastTime = lastTime;
+    }
 }

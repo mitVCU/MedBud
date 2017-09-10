@@ -50,10 +50,14 @@ public class MedicineListAdapter extends RecyclerView.Adapter<MedicineListAdapte
 
 
         }
+        for (Mapper tests : medications) {
+            holder.dosage.setText(medications.get(1).getMedicationFrequency());
+            holder.dosage.setText(medications.get(2).getMedicationFrequency());
 
-        holder.dosage.setText("some");
-        holder.name.setText("Homer");
+            holder.dosage.setText(medications.get(3).getMedicationFrequency());
+            holder.name.setText(medications.get(3).getMedicationName());
 
+        }
 
     }
 
@@ -80,4 +84,6 @@ public class MedicineListAdapter extends RecyclerView.Adapter<MedicineListAdapte
         }
 
     }
+
+
 }
