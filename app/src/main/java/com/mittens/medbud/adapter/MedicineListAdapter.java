@@ -50,14 +50,21 @@ public class MedicineListAdapter extends RecyclerView.Adapter<MedicineListAdapte
 
 
         }
-        for (Mapper tests : medications) {
-            holder.dosage.setText(medications.get(1).getMedicationFrequency());
-            holder.dosage.setText(medications.get(2).getMedicationFrequency());
+//        holder.dosage.setText(medications.get(0).getMedicationFrequency());
+//        holder.time.setText(medications.get(0).getMedicationTime());
+//        holder.quantity.setText(medications.get(0).getMedicationQuantity().toString());
+//        holder.name.setText(medications.get(0).getMedicationName());
+//
+//            holder.dosage.setText(medications.get(1).getMedicationFrequency());
+//            holder.time.setText(medications.get(1).getMedicationTime());
+//            holder.quantity.setText(medications.get(1).getMedicationQuantity().toString());
+//            holder.name.setText(medications.get(1).getMedicationName());
 
-            holder.dosage.setText(medications.get(3).getMedicationFrequency());
-            holder.name.setText(medications.get(3).getMedicationName());
+        holder.dosage.setText("Dosage: " + medications.get(1).getMedicationFrequency());
+        holder.time.setText("Time to take: " + medications.get(1).getMedicationTime());
+        holder.quantity.setText("Total Quantity: " + medications.get(1).getMedicationQuantity().toString());
+        holder.name.setText("Medication: " + medications.get(1).getMedicationName());
 
-        }
 
     }
 

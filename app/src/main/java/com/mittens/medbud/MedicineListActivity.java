@@ -49,6 +49,7 @@ public class MedicineListActivity extends AppCompatActivity {
         for (Mapper tests : result) {
 
             medications.add(tests);
+            System.out.println(tests);
         }
 
         //////////////////
